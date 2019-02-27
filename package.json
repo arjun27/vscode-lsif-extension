@@ -21,7 +21,8 @@
 	},
 	"activationEvents": [
 		"onLanguage:javascript",
-		"onLanguage:typescript"
+		"onLanguage:typescript",
+		"onLanguage:java"
 	],
 	"enableProposedApi": true,
 	"main": "./client/out/extension",

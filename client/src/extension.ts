@@ -43,6 +43,7 @@ export function activate(context: ExtensionContext) {
 		documentSelector: [
 			{ scheme: 'file', language: 'typescript', exclusive: true  }  as DocumentFilter,
 			{ scheme: 'file', language: 'javascript', exclusive: true  }  as DocumentFilter,
+			{ scheme: 'file', language: 'java', exclusive: true  }  as DocumentFilter,
 		],
 		synchronize: {
 			// Notify the server about file changes to '.clientrc files contained in the workspace

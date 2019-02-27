@@ -131,7 +131,8 @@ async function checkRegistrations(): Promise<void> {
 	if (databases.size >= 1 && registrations === undefined) {
 		let documentSelector: DocumentSelector = [
 			{ scheme: 'file', language: 'typescript', exclusive: true } as any,
-			{ scheme: 'file', language: 'javascript', exclusive: true } as any
+			{ scheme: 'file', language: 'javascript', exclusive: true } as any,
+			{ scheme: 'file', language: 'java', exclusive: true} as any
 		];
 		let toRegister: BulkRegistration = BulkRegistration.create();
 		toRegister.add(DocumentSymbolRequest.type, {
